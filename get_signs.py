@@ -1,16 +1,14 @@
 from operator import ge, ne
 from termcolor import colored
 
-def gen_sign_red(n):
-  sign=''
-  for i in range(n):
-   sign+= colored('+', 'red')
+def gen_sign_red(tempratureValue):
+  sign = ''
+  for index in range(tempratureValue):
+   sign += colored('+', 'red')
   return sign
 
-
-
-def gen_sign_blue(n):
-  sign=''
-  for i in range(n):
-   sign+= colored('+', 'blue')
+def gen_sign_blue(tempratureValue):
+  sign = ''
+  for index in range(tempratureValue):
+   sign += colored('+', 'blue')
   return sign
